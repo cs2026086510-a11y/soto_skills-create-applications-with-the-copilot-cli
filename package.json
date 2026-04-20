@@ -7,7 +7,11 @@
     "calculator": "src/calculator.js"
   },
   "scripts": {
-    "start": "node src/calculator.js"
+    "start": "node src/calculator.js",
+    "test": "jest"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }

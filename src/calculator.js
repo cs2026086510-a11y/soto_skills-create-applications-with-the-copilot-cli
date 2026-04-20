@@ -90,4 +90,22 @@ if (require.main === module) {
   }
 }
 
-module.exports = { add, subtract, multiply, divide };
+function modulo(a, b) {
+  if (b === 0) {
+    throw new Error('Division by zero in modulo');
+  }
+  return a % b;
+}
+
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
+function squareRoot(n) {
+  if (n < 0) {
+    throw new Error('Cannot take square root of negative number');
+  }
+  return Math.sqrt(n);
+}
+
+module.exports = { add, subtract, multiply, divide, modulo, power, squareRoot };
