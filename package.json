@@ -1,0 +1,17 @@
+{
+  "name": "cli-calculator",
+  "version": "1.0.0",
+  "description": "Simple Node.js CLI calculator supporting add, subtract, multiply, divide",
+  "main": "src/calculator.js",
+  "bin": {
+    "calculator": "src/calculator.js"
+  },
+  "scripts": {
+    "start": "node src/calculator.js",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
